@@ -1,0 +1,11 @@
+<div class="row titulo">
+    <div class="col-lg-1">
+        <h3>Cursos</h3>                                
+    </div>
+    <div class="col-lg-11 bordeLinea"></div>
+</div>
+<div class="row justify-content-md-center margenTopSecciones">              
+    <app-cuadrado *ngFor="let curso of cursos;" [curso]="curso" class="col-lg-2 PaddingCuadrado"></app-cuadrado>              
+</div>          
+      
+      

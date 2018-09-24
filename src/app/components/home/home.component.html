@@ -1,0 +1,56 @@
+
+<div id="galeria" class="row galeria">            
+  <div class="col-lg-10">
+      <div class="content">
+          <div class="row  ">
+              <div class="col-lg-6">
+                  <p class="tituloPrincipal">
+                      Haz parte de nuestra <br> membresía y aprende con los mejores cursos en español.
+                  </p>                            
+                  <a (click)="verCursos()" class="btn btn-secondary btn-lg bottonPrincipal" >Ver Cursos</a>
+                  <a href="#" class="btn btn-secondary btn-lg bottonPrincipal" role="button">Ver planes</a>                            
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="row seccionCursosHome seccionClara paddingSecciones">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10">
+      <app-seccion-cursos2col  [cursos]="courses" ></app-seccion-cursos2col>
+  </div>
+</div>
+
+<div class="row seccionCursosHome seccionOscura ">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10">
+      <app-seccion-cursos class="content" [cursos]="coursesZbrush" nombre="ZBrush"></app-seccion-cursos>
+      <app-seccion-cursos class="content" [cursos]="coursesFree" nombre="Gratis"></app-seccion-cursos>    
+      
+      <br><br>
+    </div>
+</div>
+
+<div class="row seccionCursosHome seccionClara ">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10">
+      <app-seccion-cursos [cursos]="courseNew" nombre="Próximamente"></app-seccion-cursos>
+    
+  </div>
+</div>
+
+<div id="galeria" class="row galeria2">  
+  <div class="col-lg-10">
+      <div class="content">
+          <div class="row  ">
+              <div class="col-lg-6">
+                  <p class="tituloPrincipalGrande">
+                      Próximo <br> Curso en vivo
+                  </p>
+                  <a href="#" class="btn btn-secondary btn-lg bottonPrincipal" role="button">Más información</a>                   
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  

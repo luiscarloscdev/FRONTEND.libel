@@ -1,0 +1,13 @@
+<div >
+    <div class=" bordeLinea">
+        <h5 class="tituloClarito">{{nombre}}</h5>                                
+    </div>  
+    <div>
+        <div class="form-group form-check checkFormNegro">
+          <ul >
+            <li *ngFor="let opcion of opciones;"><a (click)="cambiarOpcion(opcion._id)">{{opcion.name}}</a></li>
+          </ul>
+                               
+        </div>                                    
+    </div>  
+</div>

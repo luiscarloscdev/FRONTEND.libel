@@ -1,0 +1,26 @@
+<div class="content">
+          <div class="row titulo">
+              <div class="col-lg-2">
+                 <h3>Cursos </h3>                                
+              </div>
+              <div class="col-lg-10 bordeLinea"></div>
+          </div>
+          <div class="row paddingSecciones seccionMargin">
+              <div class="col-lg-6 PaddingCuadrado">
+                  <app-cuadrado-gigante [curso]="cursos[0]"></app-cuadrado-gigante>
+              </div>
+              <div class="col-lg-6 ">
+                  <div class="content">
+                      <div class="row">
+                          <app-cuadrado-chico *ngFor="let curso of cursos;"  [curso]="curso" class="col-lg-4 PaddingCuadrado"></app-cuadrado-chico>
+                          
+                      </div>                                
+                  </div>
+              </div>
+          </div>
+          <div class="row justify-content-md-center">
+              <div class="col-lg-4 textoCentrado">
+                  <a (click)="verCursos()" class="btn btn-secondary btn-lg bottonPrincipal" >Ver más cursos</a>
+              </div>
+          </div>
+      </div>
