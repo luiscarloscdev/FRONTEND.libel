@@ -1,71 +1,153 @@
 <!-- Large modal -->
-
-
 <div id="modalLogin" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog ">
-    <div class="modal-content">
-      <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-md-10 formularioCentral">
-                  	<h1 class="tituloFormulario">Iniciar Seción</h1>
-                    <p class="tituloClarito">Si aun no tienes una cuenta <a href="#" class="linkVioleta">Registrate Aquí</a></p>
-				    <form [formGroup]="loginForm" (ngSubmit)="logiarse()" novalidate="novalidate">
-                        <div class="form-group">                            
-                            <input 
-                            formControlName="email"
-                            type="email" 
-                            class="form-control"                              
-                            aria-describedby="emailHelp" 
-                            placeholder="Correo electrónico">   
-                            <div *ngIf="loginForm.controls['email'].errors?.required && loginForm.controls['email'].touched" 
-                                class="form-control-feedback">
-                                    El email es necesario
-                            </div> 
-                            <div *ngIf="loginForm.controls['email'].errors?.pattern && loginForm.controls['email'].touched" 
-                                class="form-control-feedback">
-                                    El email no tiene formato correcto
-                            </div>  
-                                                                                 
-                        </div>
-                        <div class="form-group">                            
-                            <input 
-                            formControlName="password"
-                            type="password" 
-                            class="form-control" 
-                            placeholder="Contraseña">
-                            <div *ngIf="loginForm.controls['password'].errors?.required && loginForm.controls['password'].touched" 
-                                class="form-control-feedback">
-                                    La contraseña es necesaria
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-6 back-img remove-padding-rl">
+              <div class="content-left">
+                <!---->
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active col-md-4 col align-self-end" id="v-pills-login-tab" data-toggle="pill" href="#v-pills-login" role="tab" aria-controls="v-pills-login"
+                    aria-selected="true">Iniciar sesión</a>
+                  <a class="nav-link col-md-4 col align-self-end" id="v-pills-register-tab" data-toggle="pill" href="#v-pills-register" role="tab" aria-controls="v-pills-register"
+                    aria-selected="false">Registrarse</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 remove-padding-rl">
+              <div class="content-right">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-login" role="tabpanel" aria-labelledby="v-pills-login-tab">
+                    <!-- Login -->
+                    <div class="container">
+                      <div class="row justify-content-md-center">
+                        <div class="col-md-12 formularioCentral">
+                          <div class="header-img col-md-12">
+                            <img src="../../../assets/images/logo-libel-studios-login.png" class="img-fluid" alt="logo">
+                          </div>
+                          <form [formGroup]="loginForm" (ngSubmit)="logiarse()" novalidate="novalidate">
+                            <div class="form-group left-icon">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              <input type="text" class="form-control" placeholder="Usuario o Correo electrónico" />
                             </div>
-                            
-                        </div>
-                        <div class="form-group form-check checkForm">
-                            <div class="row">
+                            <div class="form-group left-icon">
+                              <i class="fa fa-lock" aria-hidden="true"></i>
+                              <input type="text" class="form-control" placeholder="Contraseña" />
+                            </div>
+                            <!--
+                            <div class="form-group">
+                              <input formControlName="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Correo electrónico">
+                              <div *ngIf="loginForm.controls['email'].errors?.required && loginForm.controls['email'].touched" class="form-control-feedback">
+                                El email es necesario
+                              </div>
+                              <div *ngIf="loginForm.controls['email'].errors?.pattern && loginForm.controls['email'].touched" class="form-control-feedback">
+                                El email no tiene formato correcto
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <input formControlName="password" type="password" class="form-control" placeholder="Contraseña">
+                              <div *ngIf="loginForm.controls['password'].errors?.required && loginForm.controls['password'].touched"
+                                class="form-control-feedback">
+                                La contraseña es necesaria
+                              </div>
+                            </div> -->
+                            <div class="form-group form-check checkForm">
+                              <div class="row">
                                 <div class="col-lg-6">
-                                    <input 
-                                    type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
                                 </div>
                                 <div class="col-lg-6 textoDerecha">
-                                    <a href="" class="linkClarito">Olvide mi Contraseña</a>
+                                  <a href="" class="linkClarito">Olvide mi Contraseña</a>
                                 </div>
-                            </div>                            
-                        </div>
-                        <button type="submit" [disabled]="loginForm.status !='VALID'" class="btn btn-primary botonRedondo botonVioleta">Ingresar</button>
-                    </form>
-                                      
-					<br>
-                    <br>
-                    <div *ngIf="mostrarmsj" class="alert alert-danger" role="alert">
+                              </div>
+                            </div>
+                            <button type="submit" [disabled]="loginForm.status !='VALID'" class="btn btn-primary col-md-12 btn-login">Ingresar</button>
+                          </form>
+
+                          <br>
+                          <br>
+                          <div *ngIf="mostrarmsj" class="alert alert-danger" role="alert">
                             {{errorMessage}}
+                          </div>
+                          <div class="footer-social row">
+                            <p class="tituloClarito col-md-12">O</p>
+                            <a href="#" class="btn-social-red col-md-6 botonFacebook">Facebook</a> <a href="#" class="col-md-6 btn-social-red botonGoogle">Google+</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-				  <div>
-                    <p class="tituloClarito">O inicia seción con:</p>
-                    <a href="#" class="btn btn-primary botonRedondo botonFacebook">Facebook</a>  <a href="#"class="btn btn-danger botonRedondo botonGoogle">Google+</a>
-				  </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-register" role="tabpanel" aria-labelledby="v-pills-register-tab">
+                    <!-- Login -->
+                    <div class="container">
+                      <div class="row justify-content-md-center">
+                        <div class="col-md-12 formularioCentral">
+                          <div class="header-img col-md-12">
+                            <img src="../../../assets/images/logo-libel-studios-login.png" class="img-fluid" alt="logo">
+                          </div>
+                          <form [formGroup]="loginRegister" (ngSubmit)="logiarse()" novalidate="novalidate">
+                            <div class="form-group left-icon">
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              <input type="text" class="form-control" placeholder="Usuario" />
+                            </div>
+                            <div class="form-group left-icon">
+                              <i class="fa fa-envelope" aria-hidden="true"></i>
+                              <input type="text" class="form-control" placeholder="Correo electrónico" />
+                            </div>
+                            <div class="form-group left-icon">
+                              <i class="fa fa-lock" aria-hidden="true"></i>
+                              <input type="text" class="form-control" placeholder="Contraseña" />
+                            </div>
+                            <!--
+                                                <div class="form-group">
+                                                  <input formControlName="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Correo electrónico">
+                                                  <div *ngIf="loginForm.controls['email'].errors?.required && loginForm.controls['email'].touched" class="form-control-feedback">
+                                                    El email es necesario
+                                                  </div>
+                                                  <div *ngIf="loginForm.controls['email'].errors?.pattern && loginForm.controls['email'].touched" class="form-control-feedback">
+                                                    El email no tiene formato correcto
+                                                  </div>
+                                                </div>
+                                                <div class="form-group">
+                                                  <input formControlName="password" type="password" class="form-control" placeholder="Contraseña">
+                                                  <div *ngIf="loginForm.controls['password'].errors?.required && loginForm.controls['password'].touched"
+                                                    class="form-control-feedback">
+                                                    La contraseña es necesaria
+                                                  </div>
+                                                </div> -->
+                            <div class="form-group form-check checkForm">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                                </div>
+                                <div class="col-lg-6 textoDerecha">
+                                  <a href="" class="linkClarito">Olvide mi Contraseña</a>
+                                </div>
+                              </div>
+                            </div>
+                            <button type="submit" [disabled]="loginForm.status !='VALID'" class="btn btn-primary col-md-12 btn-login">Ingresar</button>
+                          </form>
+
+                          <br>
+                          <br>
+                          <div *ngIf="mostrarmsj" class="alert alert-danger" role="alert">
+                            {{errorMessage}}
+                          </div>
+                          <div class="footer-social row">
+                            <p class="tituloClarito col-md-12">O</p>
+                            <a href="#" class="btn-social-red col-md-6 botonFacebook">Facebook</a> <a href="#" class="col-md-6 btn-social-red botonGoogle">Google+</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
+              </div>
             </div>
-       </div>    
-  </div>
-</div>
+          </div>
+        </div>
+    </div>
 </div>

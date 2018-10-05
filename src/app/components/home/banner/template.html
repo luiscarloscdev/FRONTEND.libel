@@ -1,0 +1,16 @@
+<mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [type]="'carousel-thumbnails'" [animation]="'slide'">
+  <mdb-carousel-item *ngFor="let slide of slides; let index=index">
+    <img [src]="slide.image">
+  </mdb-carousel-item>
+  <!--
+  <mdb-carousel-item>
+    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(88).jpg" alt="First slide">
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(121).jpg" alt="Second slide">
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(31).jpg" alt="Third slide">
+  </mdb-carousel-item>
+  -->
+</mdb-carousel>

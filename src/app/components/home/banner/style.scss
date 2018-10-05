@@ -1,0 +1,26 @@
+::ng-deep {
+    .banner-slide {
+        mdb-carousel {
+            .carousel {
+                .carousel-indicators {
+                    li.active {
+                        background-color: transparent;
+                        border: 2px solid #8738C1;
+                    }
+                    li {
+                        width: 110px;
+                        height: 110px;
+                        background-color: transparent;
+                        img {
+                            display: block;
+                        }
+                    }
+                    li:before,
+                    li::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}

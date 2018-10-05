@@ -1,0 +1,67 @@
+.modal-content {
+    .back-img {
+        background-image: url(../../../assets/images/img-popup-login.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        .nav {
+          margin-top: 4rem;
+            .nav-link {
+                border-radius: .25rem 0rem 0rem .25rem;
+                color: #FFFFFF;
+            }
+            .active {
+                background-color: #FFFFFF;
+                color: #8738C1;
+            }
+        }
+    }
+    .formularioCentral {
+        background-color: white;
+        padding: 58px 60px;
+        form {
+            margin-top: 25px;
+        }
+        .btn-login {
+            color: #FFFFFF;
+            background-color: #8738C1;
+            border-color: #8738C1;
+        }
+        .footer-social {
+            .btn-social-red {
+                background-color: transparent;
+                text-align: center;
+                color: #818181;
+            }
+        }
+    }
+    .content-left {}
+    form {
+        .form-group {
+            position: relative;
+            .fa {
+                position: absolute;
+                padding: 10px;
+                pointer-events: none;
+            }
+            input {
+                border: 0px;
+                border-bottom: 1px solid #9A9A9A;
+                border-radius: 0px;
+                color: #818181;
+            }
+            input:focus {
+                box-shadow: none !important;
+            }
+        }
+        .left-icon {
+            input {
+                padding-left: 30px;
+            }
+            .fa {
+                left: 0px;
+                top: -5px;
+            }
+        }
+    }
+}

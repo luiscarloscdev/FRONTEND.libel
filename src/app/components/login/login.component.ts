@@ -3,35 +3,39 @@ import {FormGroup, FormControl, Validators} from '@angular/forms';
 import { UserService } from '../../services/user.service';
 import {map} from 'rxjs/operators';
 declare var  $: any;
+
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html'
+  templateUrl : './login.component.html',
+  styleUrls : ['./style.scss']
 })
 
 export class LoginComponent implements OnInit {
   usuariologin: any={
     'email':'',
-    'password':''    
+    'password':''
   };
   loginForm: FormGroup;
+  loginRegister: FormGroup;
   identity;
   token;
   errorMessage;
   mostrarmsj=false;
   @Output() autenticado: EventEmitter<boolean>;
-  constructor(private _userService: UserService) { 
+  constructor(private _userService: UserService) {
     this.autenticado= new EventEmitter();
   }
   ngOnInit() {
     this.loginForm= new FormGroup({
       'email': new FormControl('',[
         Validators.required
-        , 
+        ,
         Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')
                                   ]),
       'password': new FormControl('',Validators.required),
     });
     this.loginForm.setValue(this.usuariologin);
+    this.loginRegister = new FormGroup({});
   }
   mostrarMensaje(){
     this.mostrarmsj=true;
@@ -43,11 +47,11 @@ export class LoginComponent implements OnInit {
   }
   logiarse(){
     this.mostrarmsj=false;
-    
+
     this._userService.signup(this.loginForm.value).subscribe(
       (response: any) =>{
         let identity = response.user;
-        this.identity = identity;        
+        this.identity = identity;
         if(!this.identity._id){
           console.log("El usuario no está correctamente identificado");
         }else{
@@ -64,23 +68,23 @@ export class LoginComponent implements OnInit {
                 }else{
                   // Crear elemento en el locaStorage para tener al usuario en sesion
                   localStorage.setItem('token',token);
-                  this.seLogue(); 
+                  this.seLogue();
                 }
               },
-              error => {                
-                this.errorMessage = <any>error;                
+              error => {
+                this.errorMessage = <any>error;
                   this.errorMessage = error.error.message;
-                  this.mostrarMensaje();  
+                  this.mostrarMensaje();
               }
             );
         }
       },
       error => {
-        this.errorMessage = <any>error;                
-                  this.errorMessage = error.error.message;  
-                  this.mostrarMensaje();                                  
+        this.errorMessage = <any>error;
+                  this.errorMessage = error.error.message;
+                  this.mostrarMensaje();
       }
     );
-    
+
   }
 }
