@@ -2,6 +2,25 @@ body {
   font-family: "Roboto";
   margin: 0px;
   padding: 0px;
+  width: 100%;
+  overflow-x: hidden;
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('assets/fonts/montserrat/Montserrat-Medium.ttf'), format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('assets/fonts/montserrat/Montserrat-Bold.ttf'), format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('assets/fonts/montserrat/Montserrat-Regular.ttf'), format('truetype');
+}
+
+.centerElement{
+  float: none;
+  margin: 0 auto;
 }
 
 .bottonPrincipal {

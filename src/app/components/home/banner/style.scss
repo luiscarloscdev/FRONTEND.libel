@@ -5,12 +5,15 @@
                 .carousel-indicators {
                     li.active {
                         background-color: transparent;
-                        border: 2px solid #8738C1;
+                        img {
+                            border: 2px solid #8738C1;
+                        }
                     }
                     li {
                         width: 110px;
                         height: 110px;
                         background-color: transparent;
+                        border-radius: 0px;
                         img {
                             display: block;
                         }
@@ -18,6 +21,54 @@
                     li:before,
                     li::after {
                         content: none;
+                    }
+                }
+                .carousel-inner {
+                    mdb-carousel-item {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner-slide {
+        .content {
+            position: relative;
+            .content-desc {
+                position: absolute;
+                top: 40%;
+                left: 90px;
+                .text {
+                    p {
+                        margin-bottom: 0px;
+                        color: #FFFFFF;
+                    }
+                    .text-small {
+                        font-family: 'Montserrat-Medium', sans-serif;
+                        font-size: 16px;
+                    }
+                    .text-big {
+                        font-family: 'Montserrat-Bold', sans-serif;
+                        font-size: 33px;
+                        font-weight: bold;
+                        line-height: 35px;
+                    }
+                }
+                .btns {
+                    .btn {
+                        font-family: 'Montserrat-Bold', sans-serif;
+                        color: #FFFFFF;
+                        border-radius: 5px;
+                        padding: 0.5rem 2.14rem;
+                    }
+                    .btn-purple {
+                        background-color: #8738C1 !important;
+                    }
+                    .btn-transp {
+                        background-color: transparent;
+                        border: 1px solid #FFFFFF;
                     }
                 }
             }

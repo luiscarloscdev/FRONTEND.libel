@@ -1,26 +1,83 @@
-<div class="content">
-          <div class="row titulo">
-              <div class="col-lg-2">
-                 <h3>Cursos </h3>
-              </div>
-              <div class="col-lg-10 bordeLinea"></div>
+<div class="content courses">
+    <div class="row title">
+        <div class="col-lg-1 name remove-padding-rl">
+          <h3>Cursos</h3>
+        </div>
+        <div class="col-lg-7 boder-line">
+          <hr>
+        </div>
+        <div class="col-lg-4 names-courses">
+          <div class="content">
+            <a href="#">Todos</a>
+            <a href="#">ZBrush</a>
+            <a href="#">3D Max</a>
+            <a href="#">Blender</a>
+            <a href="#">Hard Surface</a>
           </div>
-          <div class="row paddingSecciones seccionMargin">
-              <div class="col-lg-6 PaddingCuadrado">
-                  <!-- <app-cuadrado-gigante [curso]="cursos[0]"></app-cuadrado-gigante> -->
-              </div>
-              <div class="col-lg-6 ">
-                  <div class="content">
-                      <div class="row">
-                          <app-cuadrado-chico *ngFor="let curso of cursos;"  [curso]="curso" class="col-lg-4 PaddingCuadrado"></app-cuadrado-chico>
-
-                      </div>
-                  </div>
-              </div>
+        </div>
+    </div>
+    <div class="row card-courses paddingSecciones seccionMargin">
+        <div class="col-lg-6 content-left remove-padding-rl">
+          <div class="img-container">
+            <img src="../../../../assets/images/creacion-personajes-videojuegos-aaa-libel-studios.jpg" alt="creacion-personajes-videojuegos-aaa-libel-studios">
+            <div class="sub-title">
+              <p class="text-small">Avanzado</p>
+              <p class="text-big">Creación de personajes para videojuegos AAA</p>
+            </div>
           </div>
-          <div class="row justify-content-md-center">
-              <div class="col-lg-4 textoCentrado">
-                  <a (click)="verCursos()" class="btn btn-secondary btn-lg bottonPrincipal" >Ver más cursos</a>
+            <!-- <app-cuadrado-gigante [curso]="cursos[0]"></app-cuadrado-gigante> -->
+        </div>
+        <div class="col-lg-6 content-right">
+          <div class="row">
+            <div class="col-lg-6 conteiner">
+              <div class="container-card">
+                <img src="../../../../assets/images/blender-para-videojuegos-libel-studios.jpg" alt="creacion-personajes-videojuegos-aaa-libel-studios">
+                <div class="sub-title">
+                  <p class="text-small">Avanzado</p>
+                  <p class="text-big">Blender para Videojuegos</p>
+                </div>
               </div>
+            </div>
+            <div class="col-lg-6 conteiner">
+              <div class="container-card">
+                <img src="../../../../assets/images/cartoon-character-modeling-libel-studios.jpg" alt="creacion-personajes-videojuegos-aaa-libel-studios">
+                <div class="sub-title">
+                  <p class="text-small">Intermedio</p>
+                  <p class="text-big">Cartoon Character Modeling</p>
+                </div>
+              </div>
+            </div>
           </div>
-      </div>
+          <div class="row">
+            <div class="col-lg-6 conteiner">
+              <div class="container-card">
+                <img src="../../../../assets/images/crea-baby-groot-en-zbrush-libel-studios.jpg" alt="creacion-personajes-videojuegos-aaa-libel-studios">
+                <div class="sub-title">
+                  <p class="text-small">Avanzado</p>
+                  <p class="text-big">Crea baby Groot en ZBrush</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 conteiner">
+              <div class="container-card">
+                <img src="../../../../assets/images/creacion-de-ambiente-para-videojuegos-libel-studios.jpg" alt="creacion-personajes-videojuegos-aaa-libel-studios">
+                <div class="sub-title">
+                  <p class="text-small">Intermedio</p>
+                  <p class="text-big">Creación de Ambiente para Videojuegos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- <div class="content">
+                <div class="row">
+                    <app-cuadrado-chico *ngFor="let curso of cursos;" [curso]="curso" class="col-lg-4 PaddingCuadrado"></app-cuadrado-chico>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="row btn-see-more justify-content-md-center">
+        <div class="col-lg-2 content-b">
+            <a (click)="verCursos()" class="">+ Ver más cursos</a>
+        </div>
+    </div>
+</div>

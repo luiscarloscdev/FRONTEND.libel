@@ -2,16 +2,24 @@
   <div class="col-lg-12 remove-padding-rl">
     <div class="content">
       <app-banner></app-banner>
+      <div class="content-desc">
+        <div class="text">
+          <p class="text-small">Aprende con los mejores cursos en español</p>
+          <p class="text-big">Concept Art e Ilustración<br>de Environment</p>
+        </div>
+        <div class="btns">
+          <a (click)="verCursos()" class="btn btn-purple">Ver Curso</a>
+          <a href="#" class="btn btn-transp" role="button">Ver planes</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+<!--
 <div id="galeria" class="row galeria">
   <div class="col-lg-10">
       <div class="content">
           <div class="row">
-            <div class="col-lg-12 content-banner">
-
-            </div>
               <div class="col-lg-6">
                   <p class="tituloPrincipal">
                       Haz parte de nuestra <br> membresía y aprende con los mejores cursos en español.
@@ -23,10 +31,10 @@
       </div>
   </div>
 </div>
+-->
 <div class="row seccionCursosHome seccionClara paddingSecciones">
-  <div class="col-lg-1"></div>
-  <div class="col-lg-10">
-      <app-seccion-cursos2col  [cursos]="courses" ></app-seccion-cursos2col>
+  <div class="col-lg-10 centerElement remove-padding-rl">
+    <app-seccion-cursos2col [cursos]="courses"></app-seccion-cursos2col>
   </div>
 </div>
 

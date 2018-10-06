@@ -3,7 +3,8 @@ import {HomeService} from '../../services/home.service';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html'
+  templateUrl: './home.component.html',
+  styleUrls: ['./style.scss']
 })
 export class HomeComponent implements OnInit {
   public data;
@@ -11,10 +12,10 @@ export class HomeComponent implements OnInit {
   courseNew: any[]=[];
   courses: any[]=[];​
   coursesFree: any[]=[];  ​
-  coursesZbrush: any[]=[];  
+  coursesZbrush: any[]=[];
   course1: any[]=[];
   constructor(private homeService: HomeService,private _router: Router) {
-     
+
    }
    verCursos(){
       this._router.navigate(['/cursos']);
@@ -35,15 +36,15 @@ export class HomeComponent implements OnInit {
       }
       if(req.coursesZbrush){
         this.coursesZbrush= req.coursesZbrush;
-     
+
 
       }
       if(req.course1){
         this.course1=req.course1;
-        
+
       }
     });
-    
+
   }
 
 }

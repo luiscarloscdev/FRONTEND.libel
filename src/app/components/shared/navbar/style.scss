@@ -1,10 +1,15 @@
-.cabecera {
+.header {
     .content {
+        .var-n {
+            float: none;
+            margin: 0 auto;
+            padding: 0px;
+        }
         .menu {
             ul {
                 li {
                     a {
-                        // color: #A7A7A7 !important;
+                        font-family: 'Montserrat-Regular', sans-serif;
                     }
                 }
             }
@@ -22,6 +27,7 @@
             .login {}
             .reg {
                 a {
+                    font-family: 'Montserrat-Bold', sans-serif;
                     background-color: #8738C1;
                     color: #fff !important;
                     padding-top: 2px;

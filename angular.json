@@ -23,13 +23,13 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.scss",
-                            "../node_modules/angular-bootstrap-md/scss/mdb.scss",
-                            "../node_modules/@icon/font-awesome/font-awesome.css"
+                          "./node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
+                          "./node_modules/angular-bootstrap-md/scss/mdb-free.scss",
+                          "src/styles.scss"
                         ],
                         "scripts": [
-                          "../node_modules/chart.js/dist/Chart.js",
-                          "../node_modules/hammerjs/hammer.min.js"
+                          "./node_modules/chart.js/dist/Chart.js",
+                          "./node_modules/hammerjs/hammer.min.js"
                         ]
                     },
                     "configurations": {
