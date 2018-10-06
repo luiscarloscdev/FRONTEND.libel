@@ -1,23 +1,40 @@
-
-<div id="galeria" class="row galeria">            
+<div class="row banner-slide remove-margin-rl">
+  <div class="col-lg-12 remove-padding-rl">
+    <div class="content">
+      <app-banner></app-banner>
+      <div class="content-desc">
+        <div class="text">
+          <p class="text-small">Aprende con los mejores cursos en español</p>
+          <p class="text-big">Concept Art e Ilustración<br>de Environment</p>
+        </div>
+        <div class="btns">
+          <a (click)="verCursos()" class="btn btn-purple">Ver Curso</a>
+          <a href="#" class="btn btn-transp" role="button">Ver planes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+<div id="galeria" class="row galeria">
   <div class="col-lg-10">
       <div class="content">
-          <div class="row  ">
+          <div class="row">
               <div class="col-lg-6">
                   <p class="tituloPrincipal">
                       Haz parte de nuestra <br> membresía y aprende con los mejores cursos en español.
-                  </p>                            
+                  </p>
                   <a (click)="verCursos()" class="btn btn-secondary btn-lg bottonPrincipal" >Ver Cursos</a>
-                  <a href="#" class="btn btn-secondary btn-lg bottonPrincipal" role="button">Ver planes</a>                            
+                  <a href="#" class="btn btn-secondary btn-lg bottonPrincipal" role="button">Ver planes</a>
               </div>
           </div>
       </div>
   </div>
 </div>
+-->
 <div class="row seccionCursosHome seccionClara paddingSecciones">
-  <div class="col-lg-1"></div>
-  <div class="col-lg-10">
-      <app-seccion-cursos2col  [cursos]="courses" ></app-seccion-cursos2col>
+  <div class="col-lg-10 centerElement remove-padding-rl">
+    <app-seccion-cursos2col [cursos]="courses"></app-seccion-cursos2col>
   </div>
 </div>
 
@@ -25,8 +42,8 @@
   <div class="col-lg-1"></div>
   <div class="col-lg-10">
       <app-seccion-cursos class="content" [cursos]="coursesZbrush" nombre="ZBrush"></app-seccion-cursos>
-      <app-seccion-cursos class="content" [cursos]="coursesFree" nombre="Gratis"></app-seccion-cursos>    
-      
+      <app-seccion-cursos class="content" [cursos]="coursesFree" nombre="Gratis"></app-seccion-cursos>
+
       <br><br>
     </div>
 </div>
@@ -35,11 +52,11 @@
   <div class="col-lg-1"></div>
   <div class="col-lg-10">
       <app-seccion-cursos [cursos]="courseNew" nombre="Próximamente"></app-seccion-cursos>
-    
+
   </div>
 </div>
 
-<div id="galeria" class="row galeria2">  
+<div id="galeria" class="row galeria2">
   <div class="col-lg-10">
       <div class="content">
           <div class="row  ">
@@ -47,10 +64,9 @@
                   <p class="tituloPrincipalGrande">
                       Próximo <br> Curso en vivo
                   </p>
-                  <a href="#" class="btn btn-secondary btn-lg bottonPrincipal" role="button">Más información</a>                   
+                  <a href="#" class="btn btn-secondary btn-lg bottonPrincipal" role="button">Más información</a>
               </div>
           </div>
       </div>
   </div>
 </div>
-  

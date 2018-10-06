@@ -3,13 +3,14 @@ import { Router } from '@angular/router';
 import {GLOBAL} from '../../../services/global';
 @Component({
   selector: 'app-seccion-cursos2col',
-  templateUrl: './seccion-cursos2col.component.html'
+  templateUrl: './seccion-cursos2col.component.html',
+  styleUrls: ['./styles.scss']
 })
 export class SeccionCursos2colComponent implements OnInit {
   @Input() cursos: any[];
    @Input() nombre : string;
    @Input() cursouno: any[];
-  
+
   constructor(private _router: Router) { }
 
   ngOnInit() {

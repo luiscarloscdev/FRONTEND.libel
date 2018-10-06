@@ -31,6 +31,10 @@ import { FiltroCursoComponent } from './components/shared/filtro-curso/filtro-cu
 import { RegistracionComponent } from './components/forms/registracion/registracion.component';
 import { PruebaComponent } from './components/forms/prueba/prueba.component';
 import { PaginadorComponent } from './components/shared/paginador/paginador.component';
+
+import { CarouselModule } from 'angular-bootstrap-md';
+import { BannerComponent } from './components/home/banner/model';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,14 +58,16 @@ import { PaginadorComponent } from './components/shared/paginador/paginador.comp
     FiltroCursoComponent,
     RegistracionComponent,
     PruebaComponent,
-    PaginadorComponent
+    PaginadorComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     app_routing,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule.forRoot()
   ],
   providers: [
     UserService,

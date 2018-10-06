@@ -1,0 +1,106 @@
+.courses {
+    .title {
+        padding-top: 2rem;
+        .name {
+            h3 {
+                font-family: 'Montserrat-Bold', sans-serif;
+                color: #FFFFFF;
+                font-size: 27px;
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+        }
+        .boder-line {
+            hr {
+                border-top: 2px solid #383838;
+            }
+        }
+        .names-courses {
+            padding-left: 0px;
+            padding-right: 0px;
+            .content {
+                display: table;
+                float: right;
+                padding-top: 6px;
+                a {
+                    font-family: 'Montserrat-Regular', sans-serif;
+                    color: #818181;
+                    float: left;
+                    margin-right: 10px;
+                }
+                a:first-child {
+                    color: #8738C1;
+                }
+            }
+        }
+    }
+    .card-courses {
+        .content-left {
+            margin-top: 5px;
+            padding-right: 5px;
+            .img-container {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                .sub-title {
+                    position: absolute;
+                    bottom: 7px;
+                    p {
+                        color: #FFFFFF;
+                        margin-bottom: 0px;
+                        padding-left: 1rem;
+                    }
+                    .text-small {
+                        font-family: 'Montserrat-Regular', sans-serif;
+                    }
+                    .text-big {
+                        font-family: 'Montserrat-Bold', sans-serif;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .content-right {
+            .conteiner {
+                padding: 5px !important;
+            }
+            .container-card {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+            }
+            .sub-title {
+                position: absolute;
+                bottom: 7px;
+                p {
+                    color: #FFFFFF;
+                    margin-bottom: 0px;
+                    padding-left: 1rem;
+                }
+                .text-small {
+                    font-family: 'Montserrat-Regular', sans-serif;
+                    font-size: 10px;
+                }
+                .text-big {
+                    font-family: 'Montserrat-Bold', sans-serif;
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .btn-see-more {
+        background-color: #383838;
+        .content-b {
+            text-align: center;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            a {
+                font-family: 'Montserrat-Regular', sans-serif;
+                color: #C4C4C4;
+            }
+        }
+    }
+}
