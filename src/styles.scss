@@ -17,6 +17,10 @@ body {
     font-family: 'Montserrat-Regular';
     src: url('assets/fonts/montserrat/Montserrat-Regular.ttf'), format('truetype');
 }
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('assets/fonts/roboto/Roboto-Regular.ttf'), format('truetype');
+}
 
 .centerElement{
   float: none;
@@ -181,7 +185,7 @@ footer {
   /* IE6-9 */ }
 
 .galeria2 {
-  padding: 154px;
+  // padding: 154px;
   color: white;
   background: #b5bdc8;
   /* Old browsers */

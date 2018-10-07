@@ -1,0 +1,47 @@
+.coming-soon{
+  .centerElement{
+    margin-bottom: 4rem;
+  }
+}
+.courses-live {
+    background-image: url('../../../assets/images/02-concep-art-ilustracion-environment-libel-studios.jpg');
+    background-size: contain;
+    .content {
+        width: 60%;
+        float: none;
+        margin: 0 auto;
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+        p {
+            margin-bottom: 0px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .text-small {
+            font-family: 'Montserrat-Medium', sans-serif;
+            font-size: 16px;
+        }
+        .text-big {
+            font-family: 'Montserrat-Bold', sans-serif;
+            font-size: 33px;
+            font-weight: bold;
+            line-height: 35px;
+        }
+        .btns {
+            text-align: center;
+            .btn {
+                font-family: 'Montserrat-Bold', sans-serif;
+                color: #FFFFFF;
+                border-radius: 5px;
+                padding: 0.5rem 2.14rem;
+            }
+            .btn-purple {
+                background-color: #8738C1 !important;
+            }
+            .btn-transp {
+                background-color: transparent;
+                border: 1px solid #FFFFFF;
+            }
+        }
+    }
+}
