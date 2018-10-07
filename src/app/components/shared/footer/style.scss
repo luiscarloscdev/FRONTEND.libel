@@ -1,0 +1,41 @@
+footer {
+    .title-footer {
+        border-bottom: 1px solid #707070;
+        padding: 18px 0px 30px 0px;
+        margin-bottom: 50px;
+        .logo {
+            img {
+                width: 60%;
+            }
+        }
+        .item {
+            font-family: 'Montserrat-Regular', sans-serif;
+            color: #FFFFFF;
+            padding: 0px;
+            font-size: 15px;
+            .fa {
+                font-size: 12px;
+            }
+        }
+    }
+    .conent-items-footer {
+        h4 {
+            font-family: 'Montserrat-Bold', sans-serif;
+            color: #A7A7A7;
+            font-size: 22px;
+        }
+        a {
+            font-family: 'Roboto-Regular', sans-serif;
+            font-size: 13px;
+        }
+    }
+}
+.copyright-libel {
+    font-family: 'Montserrat-Regular', sans-serif;
+    background-color: #2C2C2C;
+    text-align: center;
+    color: #A7A7A7;
+    font-size: 16px;
+    bottom: 0px;
+    padding: 15px 0px;
+}

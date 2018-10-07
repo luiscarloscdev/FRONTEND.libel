@@ -5,10 +5,14 @@
         background-position: center;
         background-size: 100% 100%;
         .nav {
-          margin-top: 4rem;
+            margin-top: 4rem;
             .nav-link {
                 border-radius: .25rem 0rem 0rem .25rem;
                 color: #FFFFFF;
+                font-family: 'Montserrat-Medium', sans-serif;
+                text-align: center;
+                padding-top: 7px !important;
+                padding-bottom: 7px !important;
             }
             .active {
                 background-color: #FFFFFF;
@@ -23,9 +27,10 @@
             margin-top: 25px;
         }
         .btn-login {
-            color: #FFFFFF;
-            background-color: #8738C1;
-            border-color: #8738C1;
+            color: #FFFFFF !important;
+            background-color: #8738C1 !important;
+            border-color: #8738C1 !important;
+            font-family: 'Montserrat-Bold', sans-serif;
         }
         .footer-social {
             .btn-social-red {
@@ -33,16 +38,30 @@
                 text-align: center;
                 color: #818181;
             }
+            .line {
+                border-top: 1px solid #818181;
+                padding-top: 0.5rem;
+            }
+            .caract-center {
+                padding: 0px;
+            }
+            p {
+                text-align: center;
+                position: absolute;
+                top: -12px;
+            }
         }
     }
     .content-left {}
     form {
         .form-group {
             position: relative;
-            .fa {
+            .far,
+            .fas {
                 position: absolute;
                 padding: 10px;
                 pointer-events: none;
+                color: #818181;
             }
             input {
                 border: 0px;
@@ -52,6 +71,10 @@
             }
             input:focus {
                 box-shadow: none !important;
+            }
+            a.politic {
+                color: #818181;
+                text-decoration: underline;
             }
         }
         .left-icon {
