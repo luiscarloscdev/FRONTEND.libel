@@ -1,5 +1,8 @@
 .header {
     .content {
+        nav.navbar{
+          box-shadow: none;
+        }
         .var-n {
             float: none;
             margin: 0 auto;
@@ -10,29 +13,45 @@
                 li {
                     a {
                         font-family: 'Montserrat-Regular', sans-serif;
+                        font-size: 14px;
                     }
                 }
             }
         }
         .search {
+            position: relative;
             input {
                 background-color: transparent;
                 border-radius: 1.25rem;
                 height: calc(1.5rem + 2px);
                 color: #818181 !important;
                 border: 1px solid #818181;
+                font-family: 'Montserrat-SemiBold', sans-serif;
+                font-size: 12px;
+                padding-right: 2rem;
+            }
+            i {
+                position: absolute;
+                right: 20px;
+                color: #818181;
             }
         }
         .log-reg {
-            .login {}
+            .login {
+                a {
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    margin-top: 3px;
+                }
+            }
             .reg {
                 a {
-                    font-family: 'Montserrat-Bold', sans-serif;
+                    font-family: 'Montserrat-Bold', sans-serif !important;
                     background-color: #8738C1;
                     color: #fff !important;
                     padding-top: 2px;
                     padding-bottom: 2px;
-                    margin-top: 8px;
+                    margin-top: 2px;
                     border-radius: 5px;
                 }
             }

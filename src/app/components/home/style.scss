@@ -1,8 +1,9 @@
-.coming-soon{
-  .centerElement{
-    margin-bottom: 4rem;
-  }
+.coming-soon {
+    .centerElement {
+        margin-bottom: 4rem;
+    }
 }
+
 .courses-live {
     background-image: url('../../../assets/images/02-concep-art-ilustracion-environment-libel-studios.jpg');
     background-size: contain;
@@ -42,6 +43,20 @@
                 background-color: transparent;
                 border: 1px solid #FFFFFF;
             }
+        }
+    }
+}
+
+.banner-slide {
+    .content {
+        .gradient {
+            width: 100%;
+            height: 130px;
+            position: absolute;
+            bottom: 0;
+            background: rgb(33, 33, 33);
+            background: linear-gradient(0deg, rgba(33, 33, 33, 1) 0%, rgba(33, 33, 33, 0) 70%);
+            z-index: 0;
         }
     }
 }
