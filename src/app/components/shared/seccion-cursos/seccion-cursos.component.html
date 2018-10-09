@@ -10,7 +10,7 @@
   </div>
   <div class="row card-courses justify-content-md-center">
     <div class="col-lg-12">
-      <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [animation]="'slide'">
+      <mdb-carousel [isControls]="true" [interval]="intervalCarousel" class="carousel-multi-item multi-animation" [animation]="'slide'">
         <mdb-carousel-item *ngFor="let course of courses">
           <div class="row">
             <div class="col-lg-3 content-card" *ngFor="let item of course.items">

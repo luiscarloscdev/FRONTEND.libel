@@ -1,73 +1,87 @@
-       ::ng-deep {
-          .card-courses {
-              mdb-carousel {
-                  .carousel {
-                      .carousel-indicators {
-                          display: none;
-                      }
-                  }
-              }
-          }
-      }
+             ::ng-deep {
+                .card-courses {
+                    mdb-carousel {
+                        .carousel {
+                            .carousel-indicators {
+                                display: none;
+                            }
+                            .carousel-control-prev{
+                              left: -3rem;
+                            }
+                            .carousel-control-next{
+                              right: -3rem;
+                            }
+                            .carousel-control-prev, .carousel-control-next{
+                              width: 5%;
+                            }
+                            .carousel-control-prev-icon,
+                            .carousel-control-next-icon {
+                                width: 65px;
+                                height: 65px;
+                            }
+                        }
+                    }
+                }
+            }
 
-      .content-courses {
-          .title {
-              padding-top: 2rem;
-              padding-bottom: 2rem;
-              .name {
-                  padding-right: 0px;
-                  h3 {
-                      font-family: 'Montserrat-Bold', sans-serif;
-                      color: #FFFFFF;
-                      font-size: 24px;
-                      margin-bottom: 0px;
-                      strong {
-                          font-weight: 600;
-                      }
-                  }
-              }
-              .boder-line {
-                  hr {
-                      border-top: 2px solid #383838;
-                  }
-              }
-              h3 {
-                  font-family: 'Montserrat-Bold', sans-serif;
-                  color: #FFFFFF;
-                  font-size: 40px;
-                  float: none;
-                  margin: 0 auto;
-                  font-weight: 600;
-              }
-          }
-          .card-courses {
-              .content-card {
-                  padding: 5px;
-              }
-              .img-container {
-                  position: relative;
-                  img {
-                      width: 100%;
-                      height: 220px;
-                  }
-                  .sub-title {
-                      position: absolute;
-                      bottom: 7px;
-                      p {
-                          color: #FFFFFF;
-                          margin-bottom: 0px;
-                          padding-left: 1rem;
-                      }
-                      .text-small {
-                          font-family: 'Montserrat-Regular', sans-serif;
-                          font-size: 13px;
-                      }
-                      .text-big {
-                          font-family: 'Montserrat-Bold', sans-serif;
-                          font-weight: 600;
-                          font-size: 14px;
-                      }
-                  }
-              }
-          }
-      }
+            .content-courses {
+                .title {
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    .name {
+                        padding-right: 0px;
+                        h3 {
+                            font-family: 'Montserrat-Bold', sans-serif;
+                            color: #FFFFFF;
+                            font-size: 24px;
+                            margin-bottom: 0px;
+                            strong {
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .boder-line {
+                        hr {
+                            border-top: 2px solid #383838;
+                        }
+                    }
+                    h3 {
+                        font-family: 'Montserrat-Bold', sans-serif;
+                        color: #FFFFFF;
+                        font-size: 40px;
+                        float: none;
+                        margin: 0 auto;
+                        font-weight: 600;
+                    }
+                }
+                .card-courses {
+                    .content-card {
+                        padding: 5px;
+                    }
+                    .img-container {
+                        position: relative;
+                        img {
+                            width: 100%;
+                            height: 220px;
+                        }
+                        .sub-title {
+                            position: absolute;
+                            bottom: 7px;
+                            p {
+                                color: #FFFFFF;
+                                margin-bottom: 0px;
+                                padding-left: 1rem;
+                            }
+                            .text-small {
+                                font-family: 'Montserrat-Regular', sans-serif;
+                                font-size: 13px;
+                            }
+                            .text-big {
+                                font-family: 'Montserrat-Bold', sans-serif;
+                                font-weight: 600;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }

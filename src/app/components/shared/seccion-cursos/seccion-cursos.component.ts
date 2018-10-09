@@ -7,6 +7,7 @@ export class SeccionCursosComponent implements OnInit {
   @Input() name: string;
   courses: any[];
   title: string;
+  intervalCarousel: 0;
   constructor() {}
 
   ngOnInit() {
