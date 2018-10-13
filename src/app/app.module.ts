@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CuadradoMedianoComponent } from './components/shared/cuadrado-mediano/cuadrado-mediano.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
-import { CursosComponent } from './components/cursos/cursos.component';
+import { CoursesComponent } from './components/courses/courses.component';
 import { PlanesComponent } from './components/planes/planes.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { MicuentaComponent } from './components/micuenta/micuenta.component';
@@ -30,10 +30,14 @@ import { CuadradoComponent } from './components/shared/cuadrado/cuadrado.compone
 import { FiltroCursoComponent } from './components/shared/filtro-curso/filtro-curso.component';
 import { RegistracionComponent } from './components/forms/registracion/registracion.component';
 import { PruebaComponent } from './components/forms/prueba/prueba.component';
-import { PaginadorComponent } from './components/shared/paginador/paginador.component';
+import { PaginationComponent } from './components/shared/pagination/pagination.component';
 
 import { CarouselModule } from 'angular-bootstrap-md';
 import { BannerComponent } from './components/home/banner/model';
+import { CustomValidators } from '../app/shared/formCustomValidator';
+import { FormErrorService } from './services/formError.service';
+
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,7 @@ import { BannerComponent } from './components/home/banner/model';
     NavbarComponent,
     LoginComponent,
     HomeComponent,
-    CursosComponent,
+    CoursesComponent,
     PlanesComponent,
     BlogComponent,
     MicuentaComponent,
@@ -58,7 +62,7 @@ import { BannerComponent } from './components/home/banner/model';
     FiltroCursoComponent,
     RegistracionComponent,
     PruebaComponent,
-    PaginadorComponent,
+    PaginationComponent,
     BannerComponent
   ],
   imports: [
@@ -67,12 +71,15 @@ import { BannerComponent } from './components/home/banner/model';
     app_routing,
     FormsModule,
     ReactiveFormsModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    NgxPaginationModule
   ],
   providers: [
     UserService,
     HomeService,
-    CourseService
+    CourseService,
+    CustomValidators,
+    FormErrorService
   ],
   bootstrap: [AppComponent]
 })

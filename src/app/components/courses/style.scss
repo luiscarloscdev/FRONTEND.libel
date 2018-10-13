@@ -1,0 +1,121 @@
+::ng-deep {
+  .ngx-pagination{
+    float: right;
+    padding-right: 1.5rem;
+    li.current{
+      background: #393939;
+    }
+    li{
+      border: 1px solid #707070;
+      a:focus{
+        outline: none;
+      }
+      a:hover{
+        background: #393939;
+      }
+      span{
+        color: #848484
+      }
+    }
+  }
+}
+.background-section{
+  background-color: #212121;
+  .content{
+    float: none;
+    margin: 0 auto;
+    .banner{
+      color: #848484;
+      background-color: #373737;
+      padding-bottom: 3.5rem;
+    }
+    .main-course-month{
+      margin-top: 4rem;
+      .text{
+        .text-big{
+          font-family: 'Montserrat-Bold', sans-serif;
+          font-size: 33px;
+          font-weight: bold;
+          line-height: 35px;
+        }
+        p{
+          margin-bottom: 0px;
+          color: #FFFFFF;
+        }
+      }
+      .btns{
+        .btn-purple {
+          background-color: #8738C1 !important;
+        }
+        .btn{
+          font-family: 'Montserrat-Bold', sans-serif;
+          color: #FFFFFF;
+          border-radius: 5px;
+          padding: 0.5rem 2.14rem;
+        }
+
+      }
+    }
+    .title{
+      margin-top: 2.5rem;
+      h3{
+        font-family: 'Montserrat-Bold', sans-serif;
+        color: #FFFFFF;
+        font-size: 27px;
+        font-weight: 600;
+        margin-bottom: 0px;
+      }
+      .boder-line{
+        hr{
+          border-top: 2px solid #383838;
+        }
+      }
+    }
+    .content-courses{
+      margin-top: 2rem;
+      .row-courses{
+        margin-bottom: .5rem;
+        .card{
+          min-height: 10rem;
+          padding: 0px;
+          margin-left: .25rem;
+          margin-right: .25rem;
+          border-radius: 0px;
+          width: 18%;
+          position: relative;
+          background-color: #373737;
+          border: 1px solid #707070;
+          .footer{
+            position: absolute;
+            bottom: 0px;
+            p{
+              margin-bottom: 2px;
+              color: #848484;
+              font-family: 'Roboto-Regular', sans-serif;
+              font-size: 12px;
+              padding-left: .5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.accord-course {
+  .card{
+    background-color: transparent;
+    box-shadow: none;
+    .card-header{
+      padding: 0px;
+      border-bottom: 1.5px solid #383838;
+      .btn-link {
+        width: 100%;
+        text-align: left;
+        color: #848484 !important;
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+        text-decoration: none;
+      }
+    }
+  }
+}
