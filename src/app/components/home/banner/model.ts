@@ -7,9 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class BannerComponent {
+  intervalCarousel = 0;
   slides: Array<Object> = [
-    { 'image': 'https://mdbootstrap.com/img/Photos/Slides/img%20(18).jpg' },
-    { 'image': 'https://mdbootstrap.com/img/Photos/Slides/img%20(19).jpg' },
-    { 'image': 'https://mdbootstrap.com/img/Photos/Slides/img%20(20).jpg' },
+    { image: '../../../../assets/images/banner_01.jpg' },
+    { image: '../../../../assets/images/banner_02.jpg' },
+    { image: '../../../../assets/images/banner_03.jpg' },
+    { image: '../../../../assets/images/banner_04.jpg' },
   ];
 }

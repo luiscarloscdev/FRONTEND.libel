@@ -1,0 +1,133 @@
+<div class="row background-section remove-margin-rl">
+  <div class="content col-lg-10">
+    <div class="row">
+
+
+  <div class="col-lg-3 margin-top-sections">
+      <div>
+          <!--<app-filtro-curso [opciones]="categorias" nombre="Categoria" (opcionSeleccionado)="verCategoria($event)"></app-filtro-curso>
+          <br>
+          <app-filtro-curso [opciones]="softwares" nombre="Software" (opcionSeleccionado)="verSoftware($event)"></app-filtro-curso>
+          <br>
+          <app-filtro-curso [opciones]="level" nombre="Nivel" (opcionSeleccionado)="verNivel($event)"></app-filtro-curso>
+          <br>
+          <app-filtro-curso [opciones]="tipos" nombre="Tipo" (opcionSeleccionado)="verTipo($event)"></app-filtro-curso>
+          <app-filtro-curso></app-filtro-curso>-->
+          <div class="accordion accord-course" id="accordionCourses">
+              <div class="card">
+                <div class="card-header" id="courseCategory">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Categoría
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse collapsed" aria-labelledby="courseCategory" data-parent="#accordionCourses">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="courseSoftware">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Software
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="courseSoftware" data-parent="#accordionCourses">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="courseNivel">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Nivel
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="courseNivel" data-parent="#accordionCourses">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                  <div class="card-header" id="courseType">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Tipo
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="courseType" data-parent="#accordionCourses">
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+  </div>
+  <div class="col-lg-9 margin-top-sections">
+    <div class="banner">
+      <div id="galeria" class="row">
+          <div class="col-lg-10">
+              <div class="content">
+                  <div class="row remove-margin-rl">
+                      <div class="col-lg-8 main-course-month">
+                        <div class="text">
+                          <p class="text-big">
+                            Curso destacado del mes.
+                          </p>
+                        </div>
+                        <div class="btns">
+                          <a href="#" class="btn btn-purple" role="button">Ver curso</a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- <app-seccion-cursosall [cursos]="cursos" class="content"></app-seccion-cursosall> -->
+    <div class="row title remove-margin-rl">
+      <div class="col-lg-2 remove-padding-rl">
+        <h3>Cursos</h3>
+      </div>
+      <div class="col-lg-10 boder-line remove-padding-rl">
+        <hr>
+      </div>
+    </div>
+    <div class="content-courses">
+      <div *ngFor="let item of collection | paginate: { itemsPerPage: 3, currentPage: p }; let i = index" class="row remove-margin-rl justify-content-lg-center row-courses">
+        <div *ngFor="let loc of item.items" class="card">
+          <div class="footer">
+            {{loc.val}}
+            <p class="">
+                Nombre del curso
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <pagination-controls (pageChange)="p = $event"
+                      maxSize="9"
+                      directionLinks="false"
+                      autoHide="true"
+                      responsive="true"
+                      previousLabel="Previous"
+                      nextLabel="Next"
+                      screenReaderPaginationLabel="Pagination"
+                      screenReaderPageLabel="page"
+                      screenReaderCurrentLabel="You're on page"></pagination-controls>
+    </div>
+    <!-- <app-paginador class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"></app-paginador> -->
+  </div>
+</div>
+  </div>
+</div>

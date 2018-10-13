@@ -1,4 +1,4 @@
-<mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [type]="'carousel-thumbnails'" [animation]="'slide'">
+<mdb-carousel [isControls]="true" [interval]="intervalCarousel" class="carousel slide carousel-fade" [type]="'carousel-thumbnails'" [animation]="'slide'">
   <mdb-carousel-item *ngFor="let slide of slides; let index=index">
     <img [src]="slide.image">
   </mdb-carousel-item>

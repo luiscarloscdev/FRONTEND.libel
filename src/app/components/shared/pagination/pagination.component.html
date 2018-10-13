@@ -1,0 +1,30 @@
+<div class="list" style="color: #FFF;">
+  <ul>
+    <li *ngFor="let item of collection | paginate: { itemsPerPage: 10, currentPage: p }; let i = index">
+      <div *ngFor="let loc of item.items">
+        {{loc.val}}
+      </div>
+      items: {{i}}
+    </li>
+  </ul>
+
+  <pagination-controls (pageChange)="p = $event"
+                      maxSize="9"
+                      directionLinks="false"
+                      autoHide="true"
+                      responsive="true"
+                      previousLabel="Previous"
+                      nextLabel="Next"
+                      screenReaderPaginationLabel="Pagination"
+                      screenReaderPageLabel="page"
+                      screenReaderCurrentLabel="You're on page"></pagination-controls>
+</div>
+
+
+  <!-- <div class="btn-group mr-2" role="group" aria-label="First group">
+      <button type="button" class="btn btn-secondary">1</button>
+      <button type="button" class="btn btn-secondary">2</button>
+      <button type="button" class="btn btn-secondary">3</button>
+      <button type="button" class="btn btn-secondary">4</button>
+  </div> -->
+

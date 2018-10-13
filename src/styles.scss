@@ -26,6 +26,15 @@ body {
     src: url('assets/fonts/montserrat/Montserrat-SemiBold.ttf'), format('truetype');
 }
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('assets/fonts/roboto/Roboto-Regular.ttf'), format('truetype');
+}
+
+.margin-top-sections{
+  margin-top: 50px;
+}
+
 .centerElement{
   float: none;
   margin: 0 auto;
@@ -260,6 +269,6 @@ footer {
     padding-left: 0px;
 }
 .remove-margin-rl{
-      margin-right: 0px;
+    margin-right: 0px;
     margin-left: 0px;
 }

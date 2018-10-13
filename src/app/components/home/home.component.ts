@@ -21,29 +21,29 @@ export class HomeComponent implements OnInit {
       this._router.navigate(['/cursos']);
    }
   ngOnInit() {
-    this.homeService.getHome().subscribe((req : any) =>{
-      if(req.courseLive){
-        this.courseLive= req.courseLive;
-      }
-      if(req.courseNew){
-        this.courseNew=req.courseNew;
-      }
-      if(req.courses){
-        this.courses=req.courses;
-      }
-      if(req.coursesFree){
-        this.coursesFree=req.coursesFree;
-      }
-      if(req.coursesZbrush){
-        this.coursesZbrush= req.coursesZbrush;
+    // this.homeService.getHome().subscribe((req : any) =>{
+    //   if(req.courseLive){
+    //     this.courseLive= req.courseLive;
+    //   }
+    //   if(req.courseNew){
+    //     this.courseNew=req.courseNew;
+    //   }
+    //   if(req.courses){
+    //     this.courses=req.courses;
+    //   }
+    //   if(req.coursesFree){
+    //     this.coursesFree=req.coursesFree;
+    //   }
+    //   if(req.coursesZbrush){
+    //     this.coursesZbrush= req.coursesZbrush;
 
 
-      }
-      if(req.course1){
-        this.course1=req.course1;
+    //   }
+    //   if(req.course1){
+    //     this.course1=req.course1;
 
-      }
-    });
+    //   }
+    // });
 
   }
 
