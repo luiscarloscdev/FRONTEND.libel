@@ -13,6 +13,7 @@ export class CoursesComponent implements OnInit {
   level: any[]=[];
   cursos: any[]=[];
   collection = [];
+  p: any;
   categories = ['items1', 'items1', 'items1', 'items1', 'items1', 'items1', 'items1'];
   constructor(private _courseService: CourseService, private _router: Router) { }
 
