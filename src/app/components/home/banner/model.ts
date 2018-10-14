@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class BannerComponent {
-  intervalCarousel = 0;
+  intervalCarousel = 5000;
   slides: Array<Object> = [
     { image: '../../../../assets/images/banner_01.jpg' },
     { image: '../../../../assets/images/banner_02.jpg' },
