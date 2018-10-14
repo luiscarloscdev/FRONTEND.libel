@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CourseService} from '../../services/course.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
@@ -12,7 +13,8 @@ export class CoursesComponent implements OnInit {
   level: any[]=[];
   cursos: any[]=[];
   collection = [];
-  constructor(private _courseService: CourseService) { }
+  categories = ['items1', 'items1', 'items1', 'items1', 'items1', 'items1', 'items1'];
+  constructor(private _courseService: CourseService, private _router: Router) { }
 
   ngOnInit() {
     for (let i = 1; i <= 100; i++) {
@@ -59,6 +61,7 @@ export class CoursesComponent implements OnInit {
     });
     //this.categorias= this._courseService.getCategoryAll();
   }
+
   verCategoria(opcion: string){
     this._courseService.getCourseAllCategoria(opcion,1).subscribe((req: any) =>{
       if(req){
