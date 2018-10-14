@@ -1,0 +1,70 @@
+.section-video{
+  background-color: #212121;
+  .content-video{
+
+  }
+}
+.promo-course{
+  background: rgb(8,8,8);
+  background: linear-gradient(250deg, rgba(8,8,8,1) 0%, rgba(44,44,44,1) 70%);
+  padding-bottom: 2rem;
+  .content-promo{
+
+    .title{
+      margin-top: 3.5rem;
+      h3{
+        font-family: 'Roboto-Bold', sans-serif;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 32px;
+      }
+      .boder-line{
+        hr{
+          border-top: 2px solid #383838;
+        }
+      }
+    }
+    .body-promo{
+      p{
+        font-family: 'Roboto-Regular', sans-serif;
+        color: #909090;
+      }
+    }
+  }
+}
+.gallery{
+  background-color: #212121;
+  .title{
+    margin-top: 2.5rem;
+    h3{
+      font-family: 'Roboto-Regular', sans-serif;
+      color: #848484;
+      font-size: 27px;
+      font-weight: 600;
+      margin-bottom: 0px;
+    }
+    .boder-line{
+      hr{
+        border-top: 2px solid #383838;
+      }
+    }
+  }
+  .content-gallery{
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    .row-gallery{
+      margin-bottom: .5rem;
+      .card{
+        min-height: 17rem;
+        padding: 0px;
+        margin-left: .25rem;
+        margin-right: .25rem;
+        border-radius: 0px;
+        width: 32%;
+        position: relative;
+        background-color: #373737;
+        border: 1px solid #707070;
+      }
+    }
+  }
+}

@@ -22,8 +22,9 @@ export class CoursesComponent implements OnInit {
           {'val': 2 + 'item-c: ' + i},
           {'val': 3 + 'item-c: ' + i},
           {'val': 4 + 'item-c: ' + i},
-          {'val': 5 + 'item-c: ' + i}]
-        });
+          {'val': 5 + 'item-c: ' + i}
+        ]
+      });
     }
     this._courseService.getCategoryAll().subscribe((req: any) =>{
       if(req){

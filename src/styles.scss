@@ -6,29 +6,28 @@ body {
   overflow-x: hidden;
 }
 @font-face {
-    font-family: 'Montserrat-Medium';
-    src: url('assets/fonts/montserrat/Montserrat-Medium.ttf'), format('truetype');
+  font-family: 'Montserrat-Medium';
+  src: url('assets/fonts/montserrat/Montserrat-Medium.ttf'), format('truetype');
 }
 @font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('assets/fonts/montserrat/Montserrat-Bold.ttf'), format('truetype');
+  font-family: 'Montserrat-Bold';
+  src: url('assets/fonts/montserrat/Montserrat-Bold.ttf'), format('truetype');
 }
 @font-face {
-    font-family: 'Montserrat-Regular';
-    src: url('assets/fonts/montserrat/Montserrat-Regular.ttf'), format('truetype');
+  font-family: 'Montserrat-Regular';
+  src: url('assets/fonts/montserrat/Montserrat-Regular.ttf'), format('truetype');
 }
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url('assets/fonts/roboto/Roboto-Regular.ttf'), format('truetype');
+  font-family: 'Montserrat-SemiBold';
+  src: url('assets/fonts/montserrat/Montserrat-SemiBold.ttf'), format('truetype');
 }
 @font-face {
-    font-family: 'Montserrat-SemiBold';
-    src: url('assets/fonts/montserrat/Montserrat-SemiBold.ttf'), format('truetype');
+  font-family: 'Roboto-Regular';
+  src: url('assets/fonts/roboto/Roboto-Regular.ttf'), format('truetype');
 }
-
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url('assets/fonts/roboto/Roboto-Regular.ttf'), format('truetype');
+  font-family: 'Roboto-Bold';
+  src: url('assets/fonts/roboto/Roboto-Bold.ttf'), format('truetype');
 }
 
 .margin-top-sections{

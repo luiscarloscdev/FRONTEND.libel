@@ -38,6 +38,16 @@ import { CustomValidators } from '../app/shared/formCustomValidator';
 import { FormErrorService } from './services/formError.service';
 
 import { NgxPaginationModule } from 'ngx-pagination';
+import { ViewCourseComponent } from './components/courses/view-course/view.component';
+import { VideoCourseComponent } from './components/video/video.component';
+
+/**
+ * videogular
+ */
+import {VgCoreModule} from 'videogular2/core';
+import {VgControlsModule} from 'videogular2/controls';
+import {VgOverlayPlayModule} from 'videogular2/overlay-play';
+import {VgBufferingModule} from 'videogular2/buffering';
 
 @NgModule({
   declarations: [
@@ -63,7 +73,9 @@ import { NgxPaginationModule } from 'ngx-pagination';
     RegistracionComponent,
     PruebaComponent,
     PaginationComponent,
-    BannerComponent
+    BannerComponent,
+    ViewCourseComponent,
+    VideoCourseComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +84,11 @@ import { NgxPaginationModule } from 'ngx-pagination';
     FormsModule,
     ReactiveFormsModule,
     CarouselModule.forRoot(),
-    NgxPaginationModule
+    NgxPaginationModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
   ],
   providers: [
     UserService,
