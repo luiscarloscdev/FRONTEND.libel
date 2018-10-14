@@ -1,0 +1,42 @@
+<div class="row section-video justify-content-lg-center remove-margin-rl">
+  <div class="content-video col-lg-10">
+    <app-video-course></app-video-course>
+  </div>
+</div>
+
+<div class="row promo-course justify-content-lg-center remove-margin-rl">
+  <div class="col-lg-10 content-promo remove-padding-rl">
+    <div class="title">
+      <h3>Imagen promo del<br>curso</h3>
+    </div>
+    <div class="col-lg-6 body-promo remove-padding-rl">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet ornare feugiat.
+        Etiam condimentum libero ut dui vestibulum, quis ornare dolor. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Fusce imperdiet ornare feugiat. Etiam condimentum libero ut dui vestibulum,
+        quis ornare dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet ornare feugiat.
+        Etiam condimentum libero ut dui vestibulum, quis ornare dolor.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Fusce imperdiet ornare feugiat. Etiam condimentum libero ut dui vestibulum, quis ornare dolor.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row gallery justify-content-lg-center remove-margin-rl">
+  <div class="col-lg-10 remove-padding-rl">
+    <div class="row title remove-margin-rl">
+      <div class="col-lg-2 remove-padding-rl">
+        <h3>Galería</h3>
+      </div>
+      <div class="col-lg-10 boder-line remove-padding-rl">
+        <hr>
+      </div>
+    </div>
+    <div class="content-gallery">
+      <div *ngFor="let item of collection" class="row remove-margin-rl justify-content-lg-center row-gallery">
+        <div *ngFor="let loc of item.items" class="card">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
