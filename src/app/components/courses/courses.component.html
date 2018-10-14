@@ -22,9 +22,17 @@
                     </button>
                   </h5>
                 </div>
-                <div id="collapseOne" class="collapse collapsed" aria-labelledby="courseCategory" data-parent="#accordionCourses">
+                <div id="collapseOne" class="collapse show" aria-labelledby="courseCategory" data-parent="#accordionCourses">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="content-category">
+                      <div class="checkbox" *ngFor="let item of categories;">
+                        <label>
+                          <input type="checkbox" value="">
+                          <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                          Nombre de categoría
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -38,7 +46,15 @@
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="courseSoftware" data-parent="#accordionCourses">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <div class="content-category">
+                      <div class="checkbox" *ngFor="let item of categories;">
+                        <label>
+                          <input type="checkbox" value="">
+                          <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                          Nombre de categoría
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -52,7 +68,15 @@
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="courseNivel" data-parent="#accordionCourses">
                   <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      <div class="content-category">
+                          <div class="checkbox" *ngFor="let item of categories;">
+                            <label>
+                              <input type="checkbox" value="">
+                              <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                              Nombre de categoría
+                            </label>
+                          </div>
+                        </div>
                   </div>
                 </div>
               </div>
@@ -66,7 +90,15 @@
                   </div>
                   <div id="collapseFour" class="collapse" aria-labelledby="courseType" data-parent="#accordionCourses">
                     <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <div class="content-category">
+                            <div class="checkbox" *ngFor="let item of categories;">
+                              <label>
+                                <input type="checkbox" value="">
+                                <span class="cr"><i class="cr-icon fas fa-check"></i></span>
+                                Nombre de categoría
+                              </label>
+                            </div>
+                          </div>
                     </div>
                   </div>
                 </div>
@@ -86,7 +118,7 @@
                           </p>
                         </div>
                         <div class="btns">
-                          <a href="#" class="btn btn-purple" role="button">Ver curso</a>
+                          <a href="#" [routerLink]="['/view']" class="btn btn-purple" role="button">Ver curso</a>
                         </div>
                       </div>
                   </div>
